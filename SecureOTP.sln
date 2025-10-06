@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureOTP", "SecureOTP.csproj", "{6005D376-3195-4886-8738-27E2FDE394AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractiveTest", "InteractiveTest\InteractiveTest.csproj", "{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{6005D376-3195-4886-8738-27E2FDE394AE}.Release|x64.Build.0 = Release|Any CPU
 		{6005D376-3195-4886-8738-27E2FDE394AE}.Release|x86.ActiveCfg = Release|Any CPU
 		{6005D376-3195-4886-8738-27E2FDE394AE}.Release|x86.Build.0 = Release|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Debug|x64.Build.0 = Debug|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Debug|x86.Build.0 = Debug|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Release|x64.Build.0 = Release|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{4C0777E8-B1B8-48A6-A4F8-C9082BA538EA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
