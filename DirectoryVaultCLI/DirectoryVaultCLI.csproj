@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>Directory Vault CLI</AssemblyTitle>
+    <AssemblyDescription>Command-line interface for Universal Secure Command Vault with Directory Encryption</AssemblyDescription>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../SecureCommandVaultWithDirectories.cs" />
+    <Compile Include="../TotpManager.cs" />
+    <Compile Include="../TotpService.cs" />
+    <Compile Include="../TotpStorage.cs" />
+    <Compile Include="../AdvancedMemoryEncryption.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OtpNet" Version="1.3.0" />
+    <PackageReference Include="QRCoder" Version="1.4.3" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

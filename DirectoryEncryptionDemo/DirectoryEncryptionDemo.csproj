@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>Directory Encryption Demo</AssemblyTitle>
+    <AssemblyDescription>Demonstration of Directory Encryption with OTP Authentication</AssemblyDescription>
+  </PropertyGroup>
+
+</Project>
