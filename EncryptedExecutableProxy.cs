@@ -30,7 +30,7 @@ namespace SecureOTP
             Directory.CreateDirectory(_storageDirectory);
             
             // Initialize real-time memory encryption
-            _memoryEncryption = new AdvancedMemoryEncryption($"{encryptionKey}:memory", logger);
+            _memoryEncryption = new AdvancedMemoryEncryption($"{encryptionKey}:memory");
         }
 
         /// <summary>
@@ -116,14 +116,16 @@ namespace SecureOTP
                 // Securely wipe the plaintext from local memory
                 RandomNumberGenerator.Fill(executableBytes);
                 
+                // Create temporary directory
+                var tempDir = Path.Combine(Path.GetTempPath(), $"secure_exec_{Guid.NewGuid():N}");
+                Directory.CreateDirectory(tempDir);
+                
                 try
                 {
                     // Retrieve executable from encrypted memory only when needed
                     var decryptedExecutable = _memoryEncryption.RetrieveCommand(commandId);
                     
                     // Create temporary executable (minimal exposure time)
-                    var tempDir = Path.Combine(Path.GetTempPath(), $"secure_exec_{Guid.NewGuid():N}");
-                    Directory.CreateDirectory(tempDir);
                     var tempExecPath = Path.Combine(tempDir, $"{executableName}");
                     
                     await File.WriteAllBytesAsync(tempExecPath, decryptedExecutable);

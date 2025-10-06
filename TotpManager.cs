@@ -363,4 +363,27 @@ namespace SecureOTP
         /// </summary>
         public string Message { get; set; } = string.Empty;
     }
+
+    /// <summary>
+    /// Result of TOTP setup operations.
+    /// </summary>
+    public class TotpSetupResult
+    {
+        public bool Success { get; set; }
+        public string QrCodeUri { get; set; } = string.Empty;
+        public string AccountName { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
+    }
+
+    /// <summary>
+    /// Result of TOTP verification operations for compatibility.
+    /// </summary>
+    public class TotpVerifyResult
+    {
+        public bool IsValid { get; set; }
+        public string AccountName { get; set; } = string.Empty;
+        public string Code { get; set; } = string.Empty;
+        public DateTimeOffset? VerifiedAt { get; set; }
+        public string Message { get; set; } = string.Empty;
+    }
 }

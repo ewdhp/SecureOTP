@@ -401,35 +401,4 @@ namespace SecureOTP
 
         #endregion
     }
-
-    #region Result Classes
-
-    public class TotpSetupResult
-    {
-        public bool Success { get; set; }
-        public string QrCodeUri { get; set; } = string.Empty;
-        public string AccountName { get; set; } = string.Empty;
-        public string Message { get; set; } = string.Empty;
-    }
-
-    public class TotpCodeResult
-    {
-        public bool Success { get; set; }
-        public string Code { get; set; } = string.Empty;
-        public string AccountName { get; set; } = string.Empty;
-        public int RemainingSeconds { get; set; }
-        public DateTimeOffset GeneratedAt { get; set; }
-        public string Message { get; set; } = string.Empty;
-    }
-
-    public class TotpVerifyResult
-    {
-        public bool IsValid { get; set; }
-        public string AccountName { get; set; } = string.Empty;
-        public string Code { get; set; } = string.Empty;
-        public DateTimeOffset? VerifiedAt { get; set; }
-        public string Message { get; set; } = string.Empty;
-    }
-
-    #endregion
 }
