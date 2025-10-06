@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>Universal Vault Demo</AssemblyTitle>
+    <AssemblyDescription>Demonstration of Universal Secure Command Vault</AssemblyDescription>
+  </PropertyGroup>
+
+</Project>
